@@ -1,0 +1,27 @@
+{
+  "name": "blogging-app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.ts",
+  "scripts": {
+    "dev": "yarn tensei serve --watch",
+    "build": "yarn tensei build --production",
+    "start": "node build/index.js",
+    "postinstall": "tensei orm:types"
+  },
+  "devDependencies": {
+    "@mikro-orm/sqlite": "^4.5.0",
+    "@tensei/cli": "^0.11.5",
+    "typescript": "~4.5.0"
+  },
+  "dependencies": {
+    "@mikro-orm/mongodb": "^4.5.10",
+    "@mikro-orm/postgresql": "^4.5.0",
+    "@tensei/auth": "^0.11.5",
+    "@tensei/cms": "^0.11.5",
+    "@tensei/core": "^0.11.5",
+    "@tensei/graphql": "^0.11.5",
+    "@tensei/media": "^0.11.5",
+    "graphql-upload": "^13.0.0"
+  }
+}
